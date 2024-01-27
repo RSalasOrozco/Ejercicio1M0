@@ -1,52 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 body{
-  background-color: #1D2B53;
-  font-family: 'Inconsolata', monospace;
-  font-family: 'Open Sans', sans-serif;
-}
-header{
-  background-color: #1D2B53;
-  margin: 0px 0px 0px;
-  color: #ffffff;
+  background:indigo;
 }
 
-a{
-  color: #ffffff;
+.header{
+  width: 100%;
+  height: 75px;
+  background: black;
+  /* position: fixed; */
+  z-index: 10;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+}
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+.logo{
+  float: left;
+  line-height: 75px;
 }
 
-#parrafoHeader1{
-  font-size: 50px;
-  color: #ffffff;
+.logo h1{
+  color: rgb(255, 255, 0);
+  font-weight: 400;
+  font-size: 24px;
+  cursor: default;
+}
+.menu{
+  float: right;
+  line-height: 75px;
+}
 
-}
-#parrafoHeader2{
-  font-size: 20px;
-  color: #ffffff;
-}
-.navigation {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  list-style: none;
-  margin: 0; 
-  background: #1D2B53;
-}
-.navigation a {
+.menu a{
+  color: blueviolet;
   text-decoration: none;
-  display: block;
-  padding: 1em;
-  color: rgb(255, 255, 255);
+  display: inline-block;
+  padding: 10px 15px;
+  line-height: normal;
+  font-size: 14px;
+  transition: all 500ms ease;
+  border-bottom: 4px solid transparent;
 }
-.navigation a:hover {
-  background: #1565C0;
-  border-style: double;
-  border-radius: 25px ;
+.menu a:hover{
+  color: rgb(212, 174, 248);
+  border-bottom: 4px solid transparent
 }
 
-section, footer, header{
-  text-align: center;
-  color:#ffffff
+/* ahora viene lo que es grid */
+.nombre h1{
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+  margin: 25px;
+  color: yellow;
 }
-h2, p{
-  color: #ffffff;
+
+.presentacion h2, p{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: auto;
+  margin: 25px;
+  color: hwb(60 41% 0%);
+}
+
+.tecnologias{
+  
 }

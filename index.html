@@ -3,32 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <title>Portafolio</title>
   <link rel="icon" type="image/x-icon" href="Imagenes/portfolio.png">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul class="navigation">
-        <li><a href="#">INICIO</a></li>
-        <li><a href="#">TECNOLOGIAS</a></li>
-        <li><a href="#">PROYECTOS</a></li>
-        <li><a href="#">CONTACTO</a></li>
-      </ul>
-      <hr>
-    </nav>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <h1>P.RS</h1>
+      </div>
+        <nav class="menu">
+          <a href="#">HOME</a>
+          <a href="#">TECNOLOGIAS</a>
+          <a href="#">EXPERIENCIA</a>
+          <a href="#">CONTACTO</a>
+        </nav>
+      </div>
+    </div>
   </header>
   <main>
-    <section>
-      <h1 id="parrafoHeader1"> RODOLFO DE LAS SALAS </h1>
-      <h4 id="parrafoHeader2">"Un buen desarrollador de software trabaja con disciplina y constancia desde el primer día." <br><i>Omar Bradley </i></h4>
+    <section class="nombre">
+      <h1> RODOLFO DE LAS SALAS </h1>
     </section>
-    <hr>
-    <section>
+    <section class="presentacion">
       <h2>Presentación</h2>
       <p>
         ¡Hola! Soy Rodolfo De las salas, soy Desrrollador Web Full Stack, y este es mi portafolio en línea. <br>
@@ -36,8 +34,8 @@
         Te invito a explorar y descubrir cómo mi pasión por el desarrolo y la programacion cobran vida. ¿Listo para comenzar?
         </p>
     </section>
-    <section>
-      <h2>Tecnologias</h2>
+    <section class="tecnologias">
+      <h2>tecnologias</h2>
       <div>
         <img src="Imagenes/todaslastecnologias.png" alt="">
       </div>
@@ -46,7 +44,7 @@
       <h2>Experienicia</h2>
       <p>Con alrededor de cinco años de experiencia en programación, he forjado una sólida base técnica, especializándome en <strong>JavaScript, HTML y CSS</strong> entre otras. <br>Mi enfoque se centra en la creación de experiencias web atractivas y eficientes, y he destacado especialmente en el desarrollo con React. <br>A lo largo de mi carrera, he demostrado habilidades colaborativas y capacidad para cumplir con plazos, contribuyendo a proyectos diversos y desafiantes. <br> Estoy emocionado por seguir creciendo y aplicando mi experiencia en futuras oportunidades.</p>
     </section>
-    <section>
+    <section class="proyectos">
       <div>
         <h2>Mis Proyectos</h2>
         <a href="https://developer.mozilla.org/es/docs/Web/HTML">
@@ -77,10 +75,8 @@
       <input type="submit"></form>
     </section>
   </main>
-  <hr>
   <footer>
       &copy; Todos los derechos reservados 2024
-  </footer>
-  
+  </footer> 
 </body>
 </html>
