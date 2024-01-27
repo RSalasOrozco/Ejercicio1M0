@@ -19,22 +19,24 @@ body{
   left: 0;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
 }
+
 .container{
   width: 90%;
   max-width: 1200px;
   margin: auto;
 }
+
 .logo{
   float: left;
   line-height: 75px;
 }
-
 .logo h1{
   color: rgb(255, 255, 0);
   font-weight: 400;
   font-size: 24px;
   cursor: default;
 }
+
 .menu{
   float: right;
   line-height: 75px;
@@ -50,12 +52,12 @@ body{
   transition: all 500ms ease;
   border-bottom: 4px solid transparent;
 }
+
 .menu a:hover{
-  color: rgb(212, 174, 248);
+  color: hwb(60 41% 0%);
   border-bottom: 4px solid transparent
 }
 
-/* ahora viene lo que es grid */
 .nombre h1{
   display: flex;
   justify-content: center;
@@ -70,10 +72,84 @@ body{
   justify-content: center;
   text-align: center;
   font-size: auto;
-  margin: 25px;
+  margin-block: 5%;
   color: hwb(60 41% 0%);
 }
 
-.tecnologias{
-  
+.tecnologias h2{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-block: 5%;
+  color: hwb(60 41% 0%);
+}
+
+.imagen{
+  display: flex;
+  justify-content: center;
+}
+
+.experiencia h2, p{
+  display: flex;
+  flex-direction:column;
+  text-align: center;
+  margin-block: 5%;
+  color: hwb(60 41% 0%);
+}
+
+.proyectos{
+  display: flex;
+  flex-direction:column;
+  text-align: center;
+  margin-block: 5%;
+  color: hwb(60 41% 0%);
+}
+
+.mis-proyectos{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: hwb(60 41% 0%);
+}
+
+.listado-Proyectos{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-size: 25px;
+}
+
+.listado-Proyectos a{
+  color: blueviolet;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 15px;
+  line-height: normal;
+  font-size: 30px;
+  transition: all 500ms ease;
+  border-bottom: 4px solid transparent;
+}
+
+.listado-Proyectos a:hover{
+  color: hwb(60 41% 0%);
+  border-bottom: 4px solid transparent;
+}
+
+.proyecto{
+  display: flex;
+  flex-direction:column;
+  text-align: center;
+  margin-block: 5%;
+  color: hwb(60 41% 0%);
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: black;
+  color: hwb(60 41% 0%);
+  width: 100%;
+  height:100%;
 }
